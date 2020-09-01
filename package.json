@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    // "start": "tsnd --transpile-only --ignore-watch node_moludes --respawn src/server.ts",
     "start": "node dist/src/server.js",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsnd --transpile-only --ignore-watch node_moludes --respawn src/server.ts"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

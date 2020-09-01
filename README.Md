@@ -8,4 +8,3 @@
         -Filtrar por matéria, dia da semana e horário;
          
 -Banco utilizado: relacional com knex para comandos mais fáceis
-
