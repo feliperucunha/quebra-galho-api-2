@@ -1,6 +1,6 @@
 import express, { response } from 'express';
-import ServicesController from './controllers/ServicesController';
-import ConnectionsController from './controllers/ConnectionsController';
+import ServicesController from './src/controllers/ServicesController';
+import ConnectionsController from './src/controllers/ConnectionsController';
 
 const routes = express.Router();
 const servicesControllers = new ServicesController();
