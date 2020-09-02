@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "knex --knexfile knexfile.ts migrate:latest && node dist/src/server.js",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "start": "node dist/src/server.js",
     "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback",
     "build": "tsc",
     "dev": "tsnd --transpile-only --ignore-watch node_moludes --respawn src/server.ts"
